@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&family=Oswald:wght@200&family=Roboto:wght@100&display=swap');
+
+
+/* font-family: 'Noto Sans TC', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+/* header area start */
+
+.header-area {
+    display: flex;
+    background: #2D25A0;
+    padding: 3% 5%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.header-area h1 {
+    color: #fff;
+    line-height: 55px;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.action-area {
+    margin-top: 35px;
+}
+.header-area .header-right-content{
+    transition: all .2s ease-in-out;
+}
+.header-area .header-right-content:hover{
+    transform: scale(1.1);
+}
+.action-area a {
+    color: #fff;
+    text-decoration: none;
+    background: #E02C6D;
+    padding: 9px 17px;
+}
+
+.header-right-content {
+    height: 455px;
+    width: auto;
+}
+
+.header-area .header-right-content img {
+    height: 100%;
+    width: auto;
+}
+
+/* header area ends  */
+
+/* player area start */
+
+.container {
+    padding: 0 5%;
+}
+
+.player-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    padding-top: 5%;
+    font-family: 'Oswald', sans-serif;
+}
+.player-area>article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    padding: 9px;
+}
+
+.player-area>article img {
+    max-width: 100%;
+}
+.player-area h3{
+    font-size: 35px;
+}
+
+.player-area .text p {
+    font-size: 21px;
+    text-align: justify;
+    margin-top: 19px;
+}
+
+/* player area ends */
+
+/* highlight area start */
+
+.highlight {
+    padding-top: 5%;
+}
+
+.highlight-area {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.left-highlight {
+    padding-right: 5%;
+}
+
+.highlight-area .left-highlight h1 {
+    font-size: 45px;
+    line-height: 65px;
+}
+
+
+.right-highlight img {
+    max-height: 455px;
+}
+
+/* highlight area ends */
+
+/* top player area start */
+
+.top-players-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-players-area .single-player {
+    border: 2px solid #2D25A0;
+    width: 375px;
+}
+.top-players-area .player-image{
+    width: 375px;
+}
+.top-players-area .player-image img{
+    width: 100%;
+    height: 355px;
+}
+.top-players h1{
+    margin: 35px 0;
+    text-align: center;
+}
+
+.top-players-area .about-player {
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* top player area ends */
+
+/* top news area start */
+.top-news-area{
+    text-align: center;
+}
+.top-news-area .image-area{
+    width: 100%;
+}
+.top-news-area .image-area img{
+    width: auto;
+    height: 755px;
+}
+/* top news area ends */
+
+/* football area start */
+
+.football-area {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.football-area img {
+    max-width: 455px;
+}
+
+/* football area ends */
+
+/* footer area start */
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons .single-icon{
+    padding: 15px;
+    background: #ddd;
+    margin: 0 9px;
+    border-radius: 50%;
+}
+
+/* footer area ends */
+
+
+
+
+/* responsive area start from here */
+
+ @media only screen and (max-width: 576px){
+	.header-area{
+        display: block;
+        padding: 0%;
+    }
+    .header-area .header-left-content{
+        padding: 0 25px;
+    }
+    .header-right-content {
+        width: 355px;
+        height: auto;
+    }
+    .header-area .header-right-content img{
+        width: 100%;
+        height: auto;
+        margin-top: 35px;
+    }
+
+    .highlight-area {
+        display: block;
+    }
+    .right-highlight{
+        text-align: center;
+    }
+    .right-highlight img {
+        max-width: 349px;
+        margin-top: 45px;
+    }
+    .top-players-area {
+        display: block;
+    }
+    .top-players-area .single-player {
+        border: 2px solid #2D25A0;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .top-players-area .player-image{
+        width: 100%;
+    }
+    .top-players-area .single-player img{
+        max-width: 100%;
+    }
+    .football-area img {
+        max-width: 175px;
+    }
+    .top-news-area{
+        text-align: center;
+    }
+    .top-news-area .image-area{
+        width: 100%;
+    }
+    .top-news-area .image-area img{
+        width: auto;
+        height: 205px;
+    }
+
+    }
+
+    @media only screen and (max-width: 768px){
+
+
+    }
+
+    /* responsive area ends  */
